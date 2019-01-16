@@ -1,5 +1,11 @@
 #:kivy 1.0.9
-#just testing pull requests
+
+<Base>:
+    canvas:
+        Rectangle:
+            source: './images/base.gif'
+            size: self.size
+
 <Game>:
     canvas:
         Rectangle:
@@ -12,3 +18,6 @@
         center_x: root.width - 140
         top: root.top
         text: "Score: 0"
+
+    Base:
+        center: self.parent.center

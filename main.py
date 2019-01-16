@@ -18,6 +18,8 @@ class GameApp(App):
         game = Game()
         return game
 
+class Base(Widget):
+    pass
 
 if __name__ == '__main__':
     GameApp().run()
