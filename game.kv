@@ -1,5 +1,5 @@
 #:kivy 1.0.9
-
+#just testing pull requests
 <Game>:
     canvas:
         Rectangle:
@@ -11,28 +11,4 @@
         font_size: 30
         center_x: root.width - 140
         top: root.top
-
-    Image:
-        id: base
-        source: './images/base.gif'
-        center_x: root.center_x
-
-    Image:
-        id: house
-        source: './images/house_1.gif'
-        center_x: root.width - root.width/10
-
-    Image:
-        id: kremlin
-        source: './images/kremlin_1.gif'
-        center_x: root.width - 3*root.width/10
-
-    Image:
-        id: nuclear
-        source: './images/nuclear_1.gif'
-        center_x: root.center_x - 2*root.width/10
-
-    Image:
-        id: skyscraper
-        source: './images/skyscraper_1.gif'
-        center_x: root.width/10
+        text: "Score: 0"
