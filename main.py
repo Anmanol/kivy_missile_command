@@ -7,7 +7,7 @@ from kivy.config import Config
 # Устанавливаем размер окна:
 Config.set('graphics', 'width', '1200')
 Config.set('graphics', 'height', '800')
-Config.set('graphics', 'resizable', '0')
+Config.set('graphics', 'resizable', '1')
 Config.write()
 
 
