@@ -1,11 +1,5 @@
 #:kivy 1.0.9
 
-<Base>:
-    canvas:
-        Rectangle:
-            source: './images/base.gif'
-            size: self.size
-
 <Game>:
     canvas:
         Rectangle:
@@ -15,9 +9,30 @@
 
     Label:
         font_size: 30
-        center_x: root.width - 140
-        top: root.top
-        text: "Score: 0"
+        pos: root.width - 140, root.height - 140
+        text: str(root.score)
 
-    Base:
-        center: self.parent.center
+    Image:
+        id: base
+        source: './images/base.gif'
+        center_x: root.center_x
+
+    Image:
+        id: house
+        source: './images/house_1.gif'
+        center_x: root.width - root.width/10
+
+    Image:
+        id: kremlin
+        source: './images/kremlin_1.gif'
+        center_x: root.width - 3*root.width/10
+
+    Image:
+        id: nuclear
+        source: './images/nuclear_1.gif'
+        center_x: root.center_x - 2*root.width/10
+
+    Image:
+        id: skyscraper
+        source: './images/skyscraper_1.gif'
+        center_x: root.width/10
